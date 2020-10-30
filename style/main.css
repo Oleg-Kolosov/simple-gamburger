@@ -48,12 +48,12 @@ body {
     color: #333333;
     margin-left: 2em;
     text-decoration: none;
+    transition: transform .3s ease;
 }
 
 .header__link:hover {
     color: #555555;
     transform: scale(1.2);
-    transition: transform .3s ease;
 }
 
 /*  Burger =======
