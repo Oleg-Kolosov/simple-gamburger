@@ -1,0 +1,96 @@
+/*  Config =======
+======================================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*  Header =======
+======================================*/
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #e2e2e2;
+}
+
+.header__body {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    padding: .7em 0;
+    font-size: calc(20px + 1vw);
+    color: #333333;
+}
+
+.header__nav {
+    display: flex;
+}
+
+.header__link {
+    color: #333333;
+    margin-left: 2em;
+    text-decoration: none;
+}
+
+.header__link:hover {
+    color: #555555;
+    transform: scale(1.2);
+    transition: transform .3s ease;
+}
+
+/*  Burger =======
+======================================*/
+.menu-btn {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    top: calc(50% - 14px);
+    right: 0;
+    width: 30px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.menu-btn__burger {
+    position: absolute;
+    top: 13px;
+    height: 2px;
+    width: 30px;
+    background-color: #333333;
+}
+
+.menu-btn__burger:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    height: 2px;
+    width: 30px;
+    background-color: #333333;
+}
+
+.menu-btn__burger:after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    height: 2px;
+    width: 30px;
+    background-color: #333333;
+}
